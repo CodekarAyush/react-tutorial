@@ -131,3 +131,41 @@ hum use state ka use kr k usme jis bhi button pe click kr k text nikaal lenge . 
 
 
 ******* Project 2 ( password generator ) ********
+
+useCallBack hook = function ko cache memory mei rkh leta hai , jitna part use ho paa rha hai usse use kr lo aur jo part nahi ho paa rha hai usse chhod do 
+
+useCallback(Fn , dependencies (array )) , hum issi dependency array mei bss wo hrr value daale dete hai jisse humaara comunication ho rha hai . aur ye apne aap usko optimize kr deta hai .
+
+useEffect hook = ye aisa hook hai jo component didMount pe re render krta hai component ko . useEffect hook k primary parameters callbackk aur array dependencies hote hai 
+
+ 
+useRef => useRef ka use kisi bhi DOM element ki reference hasil krne aur uske saath crucial tareeke se interact krne k liye use hota hai .
+eg: -  function MeraComponent() {
+  const meraInputRef = useRef(null);
+
+  useEffect(() => {
+    // Component mount hone par input element par focus karna
+    meraInputRef.current.focus();
+  }, []);
+
+  return <input ref={meraInputRef} />;
+}
+
+useRef ka use kr k hum kisi values ko renders k beech mei ppersist krna hota hai . 
+
+useref ka use hota hai jab humei koi value rakhni hoti hai jo renders k dauran change hoti rhegi , lekin re renders ko trigger nahi kregi 
+
+
+eg:- 
+function MeraComponent() {
+  const renderCount = useRef(0);
+
+  // Ye change hone par re-renders nahi karega
+  renderCount.current += 1;
+
+  return <div>Render Count: {renderCount.current}</div>;
+}
+
+
+
+********* project  3  Currency converter ************
