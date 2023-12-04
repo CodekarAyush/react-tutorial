@@ -169,3 +169,11 @@ function MeraComponent() {
 
 
 ********* project  3  Currency converter ************
+
+custom Hooks ka use krenge hum isme . iske liye hum ek alag folder bnaayenge .. hooks k liye alag se folder bnaana padega . aur .js file k ander hi hooks k liye function bnaayenge . qki hooks actually ek function hi toh hote hai , 
+
+Note:- Ek acchi practice ye hai ki jab bhi koi file mei function jsx return kr rha hai toh usko .jsx do wrna .js do 
+
+why do we use key while mapping ?
+
+because jab bhi hum map krte hai toh ek hi cheez baar baar render hoti hai jisse react ki performance hit hoti hai iss liye hum key attribute pass krte hai 

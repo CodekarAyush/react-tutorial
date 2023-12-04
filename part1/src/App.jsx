@@ -6,6 +6,7 @@ import Card from './components/props/Card'
 import BgColor from './components/color changer/BgColor'
 import Password from './components/password generator/Password'
 import Home from './components/Home/Home'
+import Currency from './components/CurrencyConvert/Currency'
 function App() {
 
 
@@ -18,6 +19,7 @@ function App() {
 <Route path='/card' element={<Card/>}/>
 <Route path='/bg-color' element={<BgColor/>}/>
 <Route path='/password' element={<Password/>}/>
+<Route path='/currency' element={<Currency/>}/>
     </Routes>
     </BrowserRouter>
     </>
